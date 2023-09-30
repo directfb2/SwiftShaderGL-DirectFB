@@ -1,0 +1,14 @@
+Installation Instructions
+=========================
+
+First, configure the build:
+
+  $ meson setup build/
+
+Start the build with:
+
+  $ meson compile -C build/
+
+And install SwiftShaderGL-DirectFB using:
+
+  $ meson install -C build/
