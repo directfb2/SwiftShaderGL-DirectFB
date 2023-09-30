@@ -1,0 +1,5 @@
+SwiftShaderGL-DirectFB
+======================
+
+SwiftShaderGL-DirectFB is a software implementation of the OpenGL ES and EGL APIs for the DirectFB platform.
+It is based on the original SwiftShader project.
