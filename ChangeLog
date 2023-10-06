@@ -1,3 +1,24 @@
+commit 049bf2041e2393dc324ce3bd6a44edf010e584fc
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Fri Oct 6 18:38:24 2023 +0200
+
+    Honor DSCAPS_GL
+
+commit 0ce210eb9f043a4ccf0c459508f72dbee96accaf
+Merge: afc652c d44acf8
+Author: DirectFB2 <80045286+directfb2@users.noreply.github.com>
+Date:   Sat Sep 30 16:05:48 2023 +0200
+
+    Merge pull request #1 from caramelli/master
+    
+    CPU-based implementation of OpenGL ES and EGL for DirectFB platform
+
+commit d44acf8c0c2ecb0522b5c946f0ccf0199bf578b7
+Author: Nicolas Caramelli <caramelli.devel@gmail.com>
+Date:   Sat Sep 30 15:55:20 2023 +0200
+
+    Add ChangeLog
+
 commit 883ba455b0959ca8940eff023a7f6a57d71d5849
 Author: Nicolas Caramelli <caramelli.devel@gmail.com>
 Date:   Sat Sep 30 15:54:56 2023 +0200
