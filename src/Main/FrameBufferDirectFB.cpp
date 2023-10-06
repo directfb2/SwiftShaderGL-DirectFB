@@ -32,7 +32,14 @@ FrameBufferDirectFB::FrameBufferDirectFB(IDirectFB *dfb, IDirectFBSurface *windo
 		break;
 	}
 
-	window->GetSubSurface(window, NULL, &surface);
+	window->GetCapabilities(window, &caps);
+	if (caps & DSCAPS_GL)
+	{
+		window->AddRef(window);
+		surface = window;
+	}
+	else
+		window->GetSubSurface(window, NULL, &surface);
 }
 
 FrameBufferDirectFB::~FrameBufferDirectFB()
@@ -58,7 +65,8 @@ void FrameBufferDirectFB::blit(sw::Surface *source, const Rect *sourceRect, cons
 {
 	copy(source);
 
-	surface->Flip(surface, NULL, DSFLIP_WAITFORSYNC);
+	if (!(caps & DSCAPS_GL))
+		surface->Flip(surface, NULL, DSFLIP_WAITFORSYNC);
 }
 
 }
