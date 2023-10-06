@@ -35,6 +35,7 @@ public:
 	void unlock() override;
 
 private:
+	DFBSurfaceCapabilities caps;
 	IDirectFBSurface *surface;
 };
 
